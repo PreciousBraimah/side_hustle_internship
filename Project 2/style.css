@@ -1,0 +1,56 @@
+body{
+    background: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blue;
+    text-align: center;
+}
+form {
+    background-color:rgba(8, 8, 10, 0.5);
+    margin: 50px;;
+    padding: 20px;
+    border: 1px solid #03ffab;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: orange;
+    
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4546a0;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+}
