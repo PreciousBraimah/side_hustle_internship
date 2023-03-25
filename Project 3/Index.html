@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UNIBEN STUDENT PORTAL</title>
+    <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
+    <header>
+        <ul>
+            <li class="logo"><a href="#Uniben">UNIBEN</a></li>
+            <li><a href="#Application">Application</a></li>
+            <li><a href="#Request transcript">Request Transcript</a></li>
+            <li><a href="#Enquiries">Enquiries</a></li>
+            <li class="right"><a href="#Login">Login</a></li>
+        </ul>
+    </header>
+    <body>
+        <div class="input-field">
+        <form>
+            <div>Login</div>
+            <label for="name">User Name or Id</label>
+            <input type="text" class="input" id="name" name="name" required><br>
     
+            <label for="password">Password</label>
+            <input type="password" class="input" name="password" required><br>
+            <p class="under">Notice: User names, Ids and passwords are case sensitive.</p><br>
+            <input type="button" class= "submit" value="Login"><br>
+
+            <p class="info">Don't forget to logout or exit your browser when you're done.
+                If you are having trouble logging in, make sure to enable  cookies in your web browser.
+              </p>
+              
+              <p class="info">
+                You don't have an account because you are a fresh student, or your student record has just been created?
+                <a href="requestpw" class="btn btn-success btn-xs">Inititialize your student account.</a>
+              </p>
+              <p class="info"> Or simply forgot your student id, applicant id or password?
+                <a href="changepw" class="btn btn-success btn-xs">Request a new password.</a>
+              </p>
+              <p class="info"> You are student parents and want to monitor study progress
+                of your child?
+                <a href="requestppw" class="btn btn-success btn-xs">Request a temporary parents password.</a>
+                <br>
+                Prerequisite for getting parents access is that you have a valid email address and that this address
+                has been entered by the student into the parents' email address field
 </body>
 </html>
