@@ -27,7 +27,7 @@
             <label for="password">Password</label>
             <input type="password" class="input" name="password" required><br>
             <p class="under">Notice: User names, Ids and passwords are case sensitive.</p><br>
-            <button onclick="myFunction()">Login</button><br>
+            <button onclick="clicked(event)">Login</button><br>
 
             <p class="info">Don't forget to logout or exit your browser when you're done.
                 If you are having trouble logging in, make sure to enable  cookies in your web browser.
@@ -56,14 +56,11 @@
             </footer>
 </body>
 </html>
-<script>
-  function myFunction() {
-    var txt;
-    if (confirm("Details received!")) {
-      txt = "User id nd password cannot be blank";
-    } else {
-      txt = "You have not put in a correct detail";
+<script type="text/javascript">
+  function clicked(e)
+    {
+        if(!confirm('Details Received, Thank you')) {
+            e.preventDefault();
+        }
     }
-    document.getElementById("demo").innerHTML = txt;
-  }
-  </script>
+    </script>
