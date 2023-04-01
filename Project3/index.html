@@ -15,7 +15,7 @@
 
 <nav>
   <ul>
-  <li class="current"><a href="Index.html">Home</a> </li>
+  <li class="current"><a href="index.html">Home</a> </li>
   <li><a href="About.html">About</a> </li>
   <li><a href="Services.html">Services</a> </li>
   </ul>
@@ -26,43 +26,92 @@
    <section id="showcase">
    <div class="container">
    <h1> Your everything plug</h1>
-   <p> We offer you quality products at very affordable price. The best you can see on the streets. Tell a friend to tell a friend </p>
-   </div> </section>
-   
-   <section id="newsletter">
-   <div class="container">
-   <h1>Subscribe to our Newsletter</h1>
- <form>
-   <input type="email" placeholder="Enter email..." required>
-<button type="submit" class="button_1"> Subscribe</button> 
+   <p> We offer you quality products at very affordable price. The best you can see on the streets.</p>
+
+  </div> </section>
+  <aside id="sidebar">
+    <div class="dark">
+  <h3>Register to become our wholesaler</h3>   
+  <form id="register" class="quote" action="thankyou.html">    
+   <div>
+    <label>Name</label><br>
+    <input type="text" placeholder="Name" required>
+    </div>
+      <div>
+    <label>Email</label><br>
+    <input type="email" placeholder="Email Address" required>
+    </div>
+    <div>
+      <label>Email</label><br>
+      <input type="password" placeholder="Enter your password" required>
+      </div>
+     <div>
+    <label>Any other information</label><br>
+    <textarea placeholder="Message"></textarea>
+    <button class="button_1" type="submit">Sign up</button>
+    </div>
 </form>
 </div>
 </section>
-
+</form>
+</div>
+</aside>
+</div>
+</section>
 <section id="boxes">
  <div class="container">
   <div class="box">
-   <img src="./Img/C.png">
-   <h3>HTML5 Markup</h3>
-   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, </p>
-   </div>
-   
-  <div class="box">
-   <img src="./Img/B.png">
-   <h3>CSS3 Styling</h3>
-   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, </p>
-   </div>
-   
-  <div class="box">
-   <img src="./Img/D.png">
-   <h3>React development</h3>
-   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, </p>
-   </div>
-</section>
+   <img src="bag.jpg">
+   <h3>Beautiful Bags</h3>
+   <p> Shop all kinds of beautiful bags </p>
 
+  <div class="box">
+   <img src="Dress.jpg">
+   <h3>Classy Dresses</h3>
+   <p> Shop dresses for all occasions </p>
+   </div>
+   
+  <div class="box">
+   <img src="Shoe.jpg">
+   <h3>High quality shoes</h3>
+   <p> Let your feet take you to good places, Shop quality shoes </p>
+   </div>
+
+   <div class="box">
+    <img src="Jw.jpg">
+    <h3>Non-Tarnish Jewelleries</h3>
+    <p> Accessories make everything better </p>
+    </div>
+  </div>
+ </div>
+</section>
 <footer>
-<p>OGtech Web Design, Copyright &copy; 2020 </p>
+<p>PABBY'S Emporium, Copyright &copy; 2023 </p>
 </footer>
 
 </body>
 </html>
+<script>
+    
+      const form = document.getElementById("register");
+
+const validateForm = function () {
+  const formFields = document.querySelectorAll("#register [required]");
+
+  for (let i = 0; i < formFields.length; i++) {
+    if (!formFields[i].value) {
+      return false;
+    }
+  }
+  return true;
+};
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  if (validateForm()) {
+    window.location.href = "thankyou.html";
+  } else {
+    alert("Please fill in all fields");
+  }
+});
+      </script>
